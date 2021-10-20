@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.3
+        with: 
+          node-version: 16
       - run: npm ci
       - run: npm export
       - uses: FirebaseExtended/action-hosting-deploy@v0
