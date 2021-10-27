@@ -1,0 +1,22 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  padding: 20px;
+  border: .5px solid #656565;
+  border-radius: 4px;
+}
+
+.Title {
+  margin-bottom: 20px;
+}
+
+.Options {
+  display: flex;
+  /* margin-bottom: 10px; */
+  flex-direction: column;
+}
+
+.Button, .Input {
+  margin-bottom: 10px;
+}
