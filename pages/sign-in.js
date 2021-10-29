@@ -21,7 +21,6 @@ const Sign_In = () => {
         <div className={styles.Wrapper}>
           <input className={styles.Input} type='email' placeholder='email address' />
           <input className={styles.Input} type='password' placeholder='**********' />
-          {/* <button className={styles.Button}>Create New Account</button> */}
           <span style={{ fontSize: 'smaller' }}>----------- New to Keaki.com? -----------</span>
           <button className={styles.Button} onClick={() => emailSignIn()}>Create New Account</button>
           <button className={styles.Button} onClick={() => setShowEmailSignIn(false)}>Go Back</button>
