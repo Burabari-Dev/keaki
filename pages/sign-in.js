@@ -10,6 +10,10 @@ const Sign_In = () => {
   const regAccEmail = ctx.regAccEmail;
   const emailSignIn = ctx.emailSignIn;
   const googleSignIn = ctx.googleSignIn;
+  const facebookSignIn = ctx.facebookSignIn;
+  const twitterSignIn = ctx.twitterSignIn;
+  const microsoftSignIn = ctx.microsoftSignIn;
+  const yahooSignIn = ctx.yahooSignIn;
 
   const [showEmailSignIn, setShowEmailSignIn] = useState(false);
 
@@ -31,10 +35,10 @@ const Sign_In = () => {
           <div className={styles.Options}>
             <button className={styles.Button} onClick={() => setShowEmailSignIn(true) }>Email</button>
             <button className={styles.Button} onClick={googleSignIn}>Google</button>
-            <button className={styles.Button}>Microsoft</button>
-            <button className={styles.Button}>Yahoo</button>
-            <button className={styles.Button}>Facebook</button>
-            <button className={styles.Button}>Twitter</button>
+            <button className={styles.Button} onClick={microsoftSignIn}>Microsoft</button>
+            <button className={styles.Button} onClick={yahooSignIn}>Yahoo</button>
+            <button className={styles.Button} onClick={facebookSignIn}>Facebook</button>
+            <button className={styles.Button} onClick={twitterSignIn}>Twitter</button>
           </div>
         </div>}
     </Container>
