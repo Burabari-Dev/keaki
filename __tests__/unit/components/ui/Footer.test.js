@@ -1,4 +1,4 @@
-import Footer, { copyWrightYear } from '../../../components/ui/Footer';
+import Footer, { copyWrightYear } from '../../../../components/ui/Footer';
 import { render, screen } from "@testing-library/react";
 
 describe('Footer', () => {
