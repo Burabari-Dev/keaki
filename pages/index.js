@@ -6,31 +6,23 @@ import Container from '../components/ui/Container';
 import Header from '../components/ui/Header';
 import Footer from '../components/ui/Footer';
 import styles from '../styles/Home.module.css';
+import TopBar from '../components/ui/TopBar/TopBar';
 
 export default function Home() {
-  let isInit = false;
 
   return (
     <>
       <Container>
         <Header />
-        
-        {isInit
-          ?
-          <main className={styles.main}>
-            <h1 className={styles.title}>
-              Welcome to <a href="https://keaki.com">Homegage!</a>
-            </h1>
-
-          </main>
-          :
-          <h1>
-            <Link href='/init'>Initialize app</Link>
+        <main className={styles.main}>
+          <TopBar/>
+          <h1 className={styles.title}>
+            Welcome to <a href="https://keaki.com">Homegage!</a>
           </h1>
-        }
 
+        </main>
       </Container>
-      <Footer/>
+      <Footer />
     </>
   )
 }
