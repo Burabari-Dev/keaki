@@ -18,7 +18,7 @@ describe('TopBar', () => {
   })
 
   test('Should render Cart', () => {
-
+    //TODO: Test for Cart rendering
   })
 
   test('Should render Account component', () => {

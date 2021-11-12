@@ -1,7 +1,7 @@
 import styles from '../../styles/common.module.css';
 
-const Container = ({children}) => {
-  return(
+const Container = ({ children }) => {
+  return (
     <div className={styles.Container}>
       {children}
     </div>
