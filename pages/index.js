@@ -1,36 +1,17 @@
 import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-// import Image from 'next/image'
-import Container from '../components/ui/Container';
-import Header from '../components/ui/Header';
-import Footer from '../components/ui/Footer';
-import styles from '../styles/Home.module.css';
+import Layout from '../components/ui/Layout';
+import HomePage from '../components/pages/HomePage';
+import { Menu_Items as data } from "../../dev_data/data"; //TODO: Remove this later
 
-export default function Home() {
-  let isInit = false;
-
+const Home = () => {
+  //TODO: App Data Provider initialize here
   return (
     <>
-      <Container>
-        <Header />
-        
-        {isInit
-          ?
-          <main className={styles.main}>
-            <h1 className={styles.title}>
-              Welcome to <a href="https://keaki.com">Homegage!</a>
-            </h1>
-
-          </main>
-          :
-          <h1>
-            <Link href='/init'>Initialize app</Link>
-          </h1>
-        }
-
-      </Container>
-      <Footer/>
+      <Layout pageTitle={null} menuData={data} >
+        <HomePage/>
+      </Layout>
     </>
   )
 }
+
+export default Home;

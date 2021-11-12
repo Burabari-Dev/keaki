@@ -2,21 +2,19 @@ import React from 'react';
 import styles from '../../styles/common.module.css';
 
 const Footer = () => {
-  return(
+  const year = new Date(Date.now()).getFullYear();
+  const startYear = 2021;
+
+  return (
     <footer className={styles.Footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.Logo}>
-            {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
-            <img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      &copy; {copyWrightYear(startYear, year)} Keaki.com
+    </footer>
   )
+}
+
+export const copyWrightYear = (startYear, currentYear) => {
+  const same = startYear == currentYear;
+  return `${startYear}`.concat((same ? '' : ` - ${currentYear}`)) 
 }
 
 export default Footer;
