@@ -1,17 +1,20 @@
+import { async } from '@firebase/util';
 import { useEffect, useState } from 'react';
 import Layout from '../components/ui/Layout';
 
-const Administer = () => {
+const Administer = ({isLocal}) => {
   const [menuItems, setMenuItems] = useState();
 
   useEffect(async () => {
-    const isDev = process.env['NODE_ENV'].toLowerCase() === 'development';
-    if (isDev) {
-      let { keaki_Admin_Menus } = await import('../../dev_data/data');
-      setMenuItems(keaki_Admin_Menus);
-    } else {
-      //TODO: get menuItems from server
+    async function getMenus() {
+      if (isLocal === 'true') {
+        let { keaki_Admin_Menus } = await import('../../dev_data/data');
+        setMenuItems(keaki_Admin_Menus);
+      } else {
+        //TODO: Load menuData from server
+      }
     }
+    getMenus();
   }, [menuItems]);
 
   return (
@@ -24,3 +27,10 @@ const Administer = () => {
 }
 
 export default Administer;
+
+export async function getServerSideProps() {
+  const isLocal = process.env.IS_LOCAL;
+  return{
+    props: {isLocal: isLocal || null}
+  }
+}
