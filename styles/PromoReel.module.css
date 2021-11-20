@@ -1,0 +1,24 @@
+.ReelWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.Reel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #dedede;
+  /* border-bottom: 1px solid #dedede; */
+  box-shadow: 4px 4px 8px lightgrey;
+  min-height: 250px;
+}
+
+.ReelTitle {
+  border: 1px solid #dedede;
+  padding: 5px 10px;
+  width: fit-content;
+  transform: translateY(10px) translateX(60px);
+  background-color: white;
+  border-radius: 4px;
+}
