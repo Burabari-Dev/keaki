@@ -81,3 +81,52 @@ export const Merchant_Admin_Menus = [
   {label: 'Settings'},
 
 ]
+
+
+export const Prod_Reel_Data = [
+    {
+      index: 1,
+      name: 'Acer Aspire 5',
+      brand: 'Acer',
+      model: 'Aspire 5 A515-46-R14K',
+      url: null,
+      price: '450,000',
+      xtra: 'Only 9 left in stock - Order Soon!'
+    },
+    {
+      index: 2,
+      name: 'HP Chromebook 11',
+      brand: 'HP',
+      model: 'Chromebook 11',
+      url: null,
+      price: '120,000',
+      xtra: ''
+    },
+    {
+      index: 3,
+      name: 'HP 14 Laptop | 14" Display Size | AMD Ryzen 5 5500U | 16GB RAM | 500GB HD | 1 Thunderbolt',
+      brand: 'HP',
+      model: 'AMD Ryzen 5 5500U',
+      url: null,
+      price: '380,000',
+      xtra: 'In stock soon'
+    },
+    {
+      index: 4,
+      name: 'Lenovo IdeaPad 3',
+      brand: 'Lenovo',
+      model: 'IdeaPad 3 1005g1',
+      url: null,
+      price: '410,000',
+      xtra: 'Ships to Nigeria'
+    },
+    {
+      index: 5,
+      name: 'Dell Inspiron 15.6"',
+      brand: 'Dell',
+      model: 'Inspiron 15 5536a',
+      url: null,
+      price: '530,000',
+      xtra: 'Ships to Nigeria'
+    },
+  ]
