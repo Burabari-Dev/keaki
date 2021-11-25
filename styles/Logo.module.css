@@ -1,0 +1,10 @@
+.LogoArea {
+  display: flex;
+  height: 1.2rem;
+  width: 65px;
+  /* background-color: lime; */
+  background-image: url('/images/logos/logo_18.png');
+  background-repeat: no-repeat;
+}
+
+/*TODO: Icons for different screen sizes*/
