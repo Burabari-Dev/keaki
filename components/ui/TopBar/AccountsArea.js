@@ -3,7 +3,7 @@ import { Button } from 'primereact/button';
 import styles from '../../../styles/AccountsArea.module.css';
 
 const AccountsArea = () => {
-  const [accountText, setAccountText] = useState('John Doe');
+  const [accountText, setAccountText] = useState('Sign In');
 
   return (
     <div className={styles.AccountsArea}>
