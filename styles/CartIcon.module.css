@@ -1,0 +1,21 @@
+.Wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.Badge {
+  transform: translateX(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: .7rem;
+  height: .7rem;
+  padding: .55rem;
+  color: white;
+  background-color: rgba(33, 150, 243, 0.75);
+  font-size: 0.7rem;
+  font-weight: bolder;
+  border-radius: 2rem;
+  pointer-events: none;
+}
