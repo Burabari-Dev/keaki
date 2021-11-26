@@ -8,7 +8,7 @@ describe('TopBar', () => {
   });
 
   test('Should render Logo', () => {
-    const logo = screen.queryByAltText('logo-main');
+    const logo = screen.queryByTestId('logo-main');
     expect(logo).toBeInTheDocument();
   });
 
@@ -18,7 +18,8 @@ describe('TopBar', () => {
   })
 
   test('Should render Cart', () => {
-    //TODO: Test for Cart rendering
+    const cart = screen.queryByTestId('cart');
+    expect(cart).toBeInTheDocument();
   })
 
   test('Should render Account component', () => {
