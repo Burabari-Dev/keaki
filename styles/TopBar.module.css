@@ -8,19 +8,9 @@
   min-width: 100%;
 }
 
-/* .LogoArea {
-
-} */
-
-.SearchArea{
-  min-width: 180px;
-  width: 35%;
-}
-
-.AccountsArea {
-  display: inline;
-  max-width: 150px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.CartAcct {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
