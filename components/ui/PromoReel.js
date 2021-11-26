@@ -1,5 +1,5 @@
-import styles from '../../styles/PromoReel.module.css';
 import ProductCard from './ProductCard';
+import styles from '../../styles/PromoReel.module.css';
 
 const PromoReel = ({ title = 'Promo Products', productsData = [] }) => {
   
