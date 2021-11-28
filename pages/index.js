@@ -5,6 +5,7 @@ import HomePage from '../components/pages/HomePage';
 const Home = () => {
   //TODO: App Data Provider initialize here
   const [menuItems, setMenuItems] = useState();
+  
 
   useEffect(() => {
     async function getMenus() {
@@ -29,6 +30,9 @@ export default Home;
 // export async function getServerSideProps() {
 //   const isLocal = process.env.IS_LOCAL;
 //   return{
-//     props: {isLocal: isLocal || null}
+//     props: {
+//       isLocal: isLocal || null,
+//       apiKey
+//     }
 //   }
 // }
